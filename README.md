@@ -1,16 +1,16 @@
-# Tweed DSL Core
+# Tweed DSL Core ⚙️
 
 A high-performance domain-specific language core engine
 designed for describing complex structures and schemas.
 
-## Features
+## Features 🧩
 
 - **High Performance**: Optimized parsing and execution engine
 - **Extensible**: Easy to add new language constructs and operators
 - **Type Safe**: Strong typing system with type inference
 - **Embeddable**: Designed to be easily integrated into host applications
 
-## Contributing
+## Contributing 🤝
 
 We welcome contributions! Please see our Contributing Guide for details.
 
@@ -20,16 +20,14 @@ We welcome contributions! Please see our Contributing Guide for details.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## License 📜
 
 Copyright (c) Volkov Vladimir Vladimirovich (ff34d), 2025
 
 This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
 
-Permissions: Free use, modification, and distribution for non-commercial purposes
-
-Conditions: Derivative works must remain open source under AGPL-3.0
-
-Limitations: Commercial use requires explicit permission from the author
+- Permissions: Free use, modification, and distribution for non-commercial purposes
+- Conditions: Derivative works must remain open source under AGPL-3.0
+- Limitations: Commercial use requires explicit permission from the author
 
 For commercial licensing inquiries, please contact urajimirudev@gmail.com.
