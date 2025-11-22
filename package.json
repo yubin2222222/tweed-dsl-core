@@ -1,12 +1,14 @@
 {
-  "name": "tweed-dsl-core",
-  "description": "🏎️💨 High-performance DSL engine for complex schemas and structures. AGPL-3.0 licensed.",
-  "version": "1.0.0",
-  "type": "module",
-  "repository": "https://github.com/ff34d/tweed-dsl-core.git",
-  "author": "ff34d <urajimirudev@gmail.com>",
-  "license": "AGPL-3.0",
-  "devDependencies": {
-    "typescript": "^5.9.3"
-  }
+   "name": "tweed-dsl-core",
+   "description": "🏎️💨 High-performance DSL engine for complex schemas and structures. AGPL-3.0 licensed.",
+   "version": "1.0.0",
+   "type": "module",
+   "repository": "https://github.com/ff34d/tweed-dsl-core.git",
+   "author": "ff34d <urajimirudev@gmail.com>",
+   "license": "AGPL-3.0",
+   "devDependencies": {
+      "prettier": "^3.6.2",
+      "typescript": "^5.9.3"
+   }
 }
+

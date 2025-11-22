@@ -31,3 +31,4 @@ This project is licensed under the GNU Affero General Public License v3.0 (AGPL-
 - Limitations: Commercial use requires explicit permission from the author
 
 For commercial licensing inquiries, please contact urajimirudev@gmail.com.
+

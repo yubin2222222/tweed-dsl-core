@@ -1,31 +1,32 @@
 {
-  "compilerOptions": {
-    "rootDir": "./src",
+   "compilerOptions": {
+      "rootDir": "./src",
 
-    // Environment Settings
-    "module": "esnext",
-    "target": "es2022",
-    "moduleResolution": "bundler",
-    "types": ["@types/jest"],
+      // Environment Settings
+      "module": "esnext",
+      "target": "es2022",
+      "moduleResolution": "bundler",
+      "types": ["@types/jest"],
 
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
+      // Stricter Typechecking Options
+      "noUncheckedIndexedAccess": true,
 
-    // Style Options
-    "noImplicitReturns": true,
-    "noImplicitOverride": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noPropertyAccessFromIndexSignature": true,
+      // Style Options
+      "noImplicitReturns": true,
+      "noImplicitOverride": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noPropertyAccessFromIndexSignature": true,
 
-    // Recommended Options
-    "strict": true,
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+      // Recommended Options
+      "strict": true,
+      "verbatimModuleSyntax": true,
+      "isolatedModules": true,
+      "noUncheckedSideEffectImports": true,
+      "moduleDetection": "force",
+      "skipLibCheck": true
+   },
+   "include": ["src"],
+   "exclude": ["node_modules", "dist"]
 }
+
