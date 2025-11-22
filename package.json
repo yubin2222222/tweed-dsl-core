@@ -6,15 +6,49 @@
    "repository": "https://github.com/ff34d/tweed-dsl-core.git",
    "author": "ff34d <urajimirudev@gmail.com>",
    "license": "AGPL-3.0",
+   "module": "lib/esm/index.esm.js",
+   "main": "lib/esm/index.esm.js",
+   "types": "types/index.d.ts",
+   "files": [
+      "LICENSE",
+      "README.md",
+      "lib/esm",
+      "lib/cjs"
+   ],
+   "scripts": {
+      "build": "rm -rf ./dist && rollup --config"
+   },
    "devDependencies": {
       "@eslint/js": "^9.39.1",
+      "@rollup/plugin-terser": "^0.4.4",
+      "@rollup/plugin-typescript": "^12.3.0",
       "@types/jest": "^30.0.0",
       "eslint": "^9.39.1",
       "eslint-config-prettier": "^10.1.8",
       "eslint-plugin-unicorn": "^62.0.0",
       "jest": "^30.2.0",
       "prettier": "^3.6.2",
+      "rollup": "^4.53.3",
+      "rollup-plugin-dts": "^6.2.3",
+      "rollup-plugin-generate-package-json": "^3.2.0",
+      "tslib": "^2.8.1",
       "typescript": "^5.9.3",
       "typescript-eslint": "^8.47.0"
-   }
+   },
+   "keywords": [
+      "tweed",
+      "dsl",
+      "domain-specific-language",
+      "schema-language",
+      "parser",
+      "compiler",
+      "type-system",
+      "embedded-language",
+      "code-generation",
+      "validation",
+      "configuration",
+      "data-structures",
+      "agpl-3-0",
+      "schema-definition"
+   ]
 }
