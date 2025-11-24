@@ -37,7 +37,8 @@ export default defineConfig([
             }
          ],
          "@typescript-eslint/no-non-null-assertion": "off",
-         "@typescript-eslint/no-explicit-any": "off"
+         "@typescript-eslint/no-explicit-any": "off",
+         "@typescript-eslint/no-duplicate-enum-values": "off"
       }
    }
 ])
