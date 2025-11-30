@@ -3,14 +3,11 @@ import { TokenType, type Token, type TokenRule } from "../../types/Token.types"
 import { makeCommentRule } from "./tokens/makeCommentRule"
 import { makeConfigRule } from "./tokens/makeConfigRule"
 import { makeDirectiveRule } from "./tokens/makeDirectiveRule"
-import { makeIdRule } from "./tokens/makeIDRule"
+import { makeIdRule } from "./tokens/makeIdRule"
 import { makeListRule } from "./tokens/makeListRule"
 import { makeStringRule } from "./tokens/makeStringRule"
 import { makeWhitespaceRule } from "./tokens/makeWhitespaceRule"
 import { makeWordRule } from "./tokens/makeWordRule"
-
-// TODO: Switch indexOf to manual loop. Optimized
-// TODO: Add support for nested entities and add shielding.
 
 export class Lexer implements ILexer {
    #rules: TokenRule[]
@@ -25,7 +22,7 @@ export class Lexer implements ILexer {
          makeConfigRule(S),
          makeListRule(S),
          makeDirectiveRule(S, L),
-         makeCommentRule(S),
+         makeCommentRule(S, L),
          makeStringRule(S),
          makeWordRule(L)
       ]

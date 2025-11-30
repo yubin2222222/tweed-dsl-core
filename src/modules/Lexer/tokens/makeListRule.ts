@@ -1,5 +1,6 @@
 import type { TSyntaxChars } from "../../../types/Syntax.types"
 import { TokenType, type TokenRule } from "../../../types/Token.types"
+import { readUntil } from "../../../utils/readUntil"
 
 export function makeListRule(S: TSyntaxChars): TokenRule {
    return {
@@ -7,7 +8,7 @@ export function makeListRule(S: TSyntaxChars): TokenRule {
       match(input, i) {
          if (S.LIST_OPEN !== input[i]) return null
 
-         const end = input.indexOf(S.LIST_CLOSE, i)
+         const end = readUntil(input, i, (c) => c === S.LIST_CLOSE)
          if (end === -1) throw new Error(`Unclosed list at ${i}`)
 
          return {
