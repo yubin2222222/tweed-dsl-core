@@ -24,14 +24,14 @@ export const astParsed = [
             type: "entity",
             name: "block",
             id: "block_1",
-            label: null,
+            label: undefined,
             config: { label: "block 1", theme: "default" }
          },
          {
             type: "entity",
             name: "block",
             id: "block_2",
-            label: null,
+            label: undefined,
             config: { label: "block 2", theme: "default" }
          }
       ]

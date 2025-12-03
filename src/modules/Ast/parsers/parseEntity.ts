@@ -7,7 +7,7 @@ export const parseEntity: ASTParser = (ctx, L) => {
    const id = ctx.expect(TokenType.id, "Entity does not have id")
 
    // optional string label
-   let label: string | null = null
+   let label: string | undefined
    if (ctx.current()?.type === TokenType.string) {
       label = ctx.consume()!.value
    }
