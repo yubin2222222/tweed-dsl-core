@@ -1,4 +1,5 @@
-import { ASTNodeType, type ASTParser } from "../../../types/Ast.types"
+import { type ASTParser } from "../../../types/Ast.types"
+import { NodeType } from "../../../types/SemanticModel"
 import { TokenType } from "../../../types/Token.types"
 import { parseList } from "../utils/parseList"
 
@@ -8,7 +9,7 @@ export const parseDirective: ASTParser = (ctx, L) => {
    const list = ctx.expect(TokenType.list, "Directive does not have list")
 
    return {
-      type: ASTNodeType.DIRECTIVE,
+      type: NodeType.DIRECTIVE,
       name: dirToken.value,
       id: id.value,
       list: parseList(list.value, L)

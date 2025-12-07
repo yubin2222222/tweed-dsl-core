@@ -1,4 +1,5 @@
-import { ASTNodeType, type ASTParser } from "../../../types/Ast.types"
+import { type ASTParser } from "../../../types/Ast.types"
+import { NodeType } from "../../../types/SemanticModel"
 import { TokenType } from "../../../types/Token.types"
 import { parseConfig } from "../utils/parseConfig"
 
@@ -20,7 +21,7 @@ export const parseEntity: ASTParser = (ctx, L) => {
    }
 
    return {
-      type: ASTNodeType.ENTITY,
+      type: NodeType.ENTITY,
       name: nameToken.value,
       id: id.value,
       label,

@@ -1,4 +1,5 @@
-import { ASTNodeType, type ASTParser } from "../../../types/Ast.types"
+import { type ASTParser } from "../../../types/Ast.types"
+import { NodeType } from "../../../types/SemanticModel"
 import { TokenType } from "../../../types/Token.types"
 
 export const parseComment: ASTParser = (ctx, L) => {
@@ -9,7 +10,7 @@ export const parseComment: ASTParser = (ctx, L) => {
 
    if (match && match[1] && match[2] && match[3]) {
       return {
-         type: ASTNodeType.PROGRAM,
+         type: NodeType.PROGRAM,
          schemeType: match[1],
          name: match[2],
          label: match[3],
@@ -20,7 +21,7 @@ export const parseComment: ASTParser = (ctx, L) => {
    ctx.consume() // Push next
 
    return {
-      type: ASTNodeType.COMMENT,
+      type: NodeType.COMMENT,
       value: tok.value
    }
 }

@@ -1,10 +1,5 @@
-import {
-   ASTNodeType,
-   type ASTParser,
-   type ASTProgramNode,
-   type IAST,
-   type IASTConstructor
-} from "../../types/Ast.types"
+import { type ASTParser, type IAST, type IASTConstructor } from "../../types/Ast.types"
+import { NodeType, type ProgramNode } from "../../types/SemanticModel"
 import type { TLexical } from "../../types/Syntax.types"
 import { TokenType, type Token } from "../../types/Token.types"
 import { parseComment } from "./parsers/parseComment"
@@ -29,8 +24,8 @@ export class AST implements IAST {
       }
    }
 
-   public parse(): ASTProgramNode[] {
-      const programs: ASTProgramNode[] = []
+   public parse(): ProgramNode[] {
+      const programs: ProgramNode[] = []
 
       while (!this.eof()) {
          const t = this.current()
@@ -42,17 +37,17 @@ export class AST implements IAST {
          }
 
          const program = parseComment(this, this.#L)
-         if (program.type === ASTNodeType.PROGRAM) {
+         if (program.type === NodeType.PROGRAM) {
             this.consume()
-            programs.push(program as ASTProgramNode)
-            this.#walker(program as ASTProgramNode)
+            programs.push(program as ProgramNode)
+            this.#walker(program as ProgramNode)
          }
       }
 
       return programs
    }
 
-   #walker(program: ASTProgramNode) {
+   #walker(program: ProgramNode) {
       while (!this.eof()) {
          const t = this.current()
          if (!t) break
@@ -64,7 +59,7 @@ export class AST implements IAST {
          }
 
          const node = parser(this, this.#L)
-         if (node.type === ASTNodeType.PROGRAM) break
+         if (node.type === NodeType.PROGRAM) break
          program.nodes.push(node)
       }
    }
