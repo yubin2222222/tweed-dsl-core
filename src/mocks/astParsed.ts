@@ -1,35 +1,44 @@
-export const astParsed = [
+import type { IR } from "../types/Ir.types"
+import {
+   DirectiveName,
+   EntityName,
+   NodeType,
+   ProgramName,
+   ProgramSchemeType
+} from "../types/SemanticModel"
+
+export const astParsed: IR = [
    {
-      type: "program",
-      schemeType: "diagram",
-      name: "flowchart",
+      type: NodeType.PROGRAM,
+      schemeType: ProgramSchemeType.DIAGRAM,
+      name: ProgramName.FLOWCHART,
       label: "Products diagram",
       nodes: [
-         { type: "comment", value: "entities" },
+         { type: NodeType.COMMENT, value: "entities" },
          {
-            type: "entity",
-            name: "block",
+            type: NodeType.ENTITY,
+            name: EntityName.BLOCK,
             id: "block_id",
             label: "block label",
             config: undefined
          },
          {
-            type: "entity",
-            name: "triangle",
+            type: NodeType.ENTITY,
+            name: EntityName.TRIANGLE,
             id: "triangle_id",
             label: "triangle label",
             config: undefined
          },
          {
-            type: "entity",
-            name: "block",
+            type: NodeType.ENTITY,
+            name: EntityName.BLOCK,
             id: "block_1",
             label: undefined,
             config: { label: "block 1", theme: "default" }
          },
          {
-            type: "entity",
-            name: "block",
+            type: NodeType.ENTITY,
+            name: EntityName.BLOCK,
             id: "block_2",
             label: undefined,
             config: { label: "block 2", theme: "default" }
@@ -37,20 +46,20 @@ export const astParsed = [
       ]
    },
    {
-      type: "program",
-      schemeType: "diagram",
-      name: "flowchart",
+      type: NodeType.PROGRAM,
+      schemeType: ProgramSchemeType.DIAGRAM,
+      name: ProgramName.FLOWCHART,
       label: "Products diagram __2",
       nodes: [
          {
-            type: "directive",
-            name: "group",
+            type: NodeType.DIRECTIVE,
+            name: DirectiveName.GROUP,
             id: "group_1",
             list: ["block_id", "triangle_id"]
          },
          {
-            type: "directive",
-            name: "group",
+            type: NodeType.DIRECTIVE,
+            name: DirectiveName.GROUP,
             id: "group_2",
             list: ["block_id", "triangle_id"]
          }

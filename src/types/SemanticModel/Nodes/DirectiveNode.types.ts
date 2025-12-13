@@ -1,4 +1,4 @@
-import type { BaseNode, NodeType } from "../Base.types"
+import { type BaseNode, NodeType, type NodeList } from "../Base.types"
 
 export enum DirectiveName {
    GROUP = "group"
@@ -9,4 +9,8 @@ export interface DirectiveNode extends BaseNode {
    id: string
    name: DirectiveName
    list: NodeList
+}
+
+export function isDirectiveNode(n: BaseNode): n is DirectiveNode {
+   return n.type === NodeType.DIRECTIVE && "list" in n
 }
